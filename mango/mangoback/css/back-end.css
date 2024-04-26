@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&family=Noto+Serif+Thai:wght@100..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&family=Noto+Serif+Thai:wght@100..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tilt+Neon&display=swap');
+
+/*font thai font-family: "Prompt", sans-serif;
+  font eng  font-family: "Tilt Neon", sans-serif;*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+root{
+    --pink:#e84393;
+    --km:#2E5984;
+    --bg:#E8E8E8;
+    --bg1:#b2ffff;
+    --bg2:#197cd2;
+    --bg3:#00308f;
+}
+nav{
+    width: 100%;
+    height: 9vw;
+    background: linear-gradient(125deg, #fff4c8,#ffbb00);
+    box-shadow: 1rem 1rem rgba(0,0,0,.1);
+    position: fixed;
+    top: 0;
+    z-index: 2000;
+    text-align: center;
+}
+.logonav{
+    width: 40vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+.logonav img{
+    width: 12vw;
+    padding-top: 1.5vw;
+    position: absolute;
+}
+.logo{
+    font-family: "Sriracha", cursive;
+    font-size: 5vw;
+    text-shadow: 2px 2px 1px #ffae00;
+    color: #9f790f;
+    position: absolute;
+    left: 9vw;
+}
+.name{
+    font-family: "Sriracha", cursive;
+    font-size: 3vw;
+}
+.nav-container{
+    max-width: 90vw;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navber{
+    display: flex;
+    align-items: center;
+}
+div .navber i{
+    font-size: 3vw;
+}
+div .navber a{
+    font-size: 2vw;
+    padding:0 1.5vw;
+    color: #ff9901;
+    font-family: "Tilt Neon", sans-serif;
+}
+div .navber a:hover{
+    color: #f7c63d;
+    transform: translateY(-.5vw);
+    text-shadow: 1px 1px 5px #ff0000;
+}
+.alot{
+    margin-top: 10vw;
+}
+.navber a::after{
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background:  #ffffff;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+.navber a:hover::after{
+    transform: scale(1);
+}
